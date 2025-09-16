@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #card{
+            height: 400px;
+            width: 350px;
+            border: 1px solid black;
+            
+            padding: 20px;
+            position: relative;
+            background-color: rgb(252, 181, 47);
+        }
+        #card img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+        }
+        #button{
+
+            height:30px;
+            margin-top: 30px;
+            /* display: flex; */
+        }
+        #score-card{
+            
+            height: 100px;
+            width: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="card">
+        <span style="display: flex;">
+            <img src="sunny.jpg" />
+            <h2 >COUNTER APP</h2>
+        </span>
+        <center>
+            <div id="score-card">
+            <h1 id="score">0</h1>
+        </div>
+        </center>
+        
+        <div id="button">
+            <center>
+                <button id="inc" onclick="inc()" style="width: 50px; height: 30px;"> + </button>
+                <button id="dec" onclick="dec()" style="width: 50px; height: 30px;"> - </button>
+            </center>
+            
+        </div>
+        
+    </div>
+    </center>
+    
+    <script>
+        let a=0;
+        let b;
+        function inc(){
+            if(a!=10){
+                a= a+1;
+                b=a;
+            document.getElementById("score").innerHTML=a;
+            }
+            else{
+                alert("maximum limit")
+            }
+            
+        }
+        
+        function dec(){
+            if(b!=0){
+                b = b-1;
+                document.getElementById("score").innerHTML=b;
+            }
+            else{
+                alert("minimum limit");
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
