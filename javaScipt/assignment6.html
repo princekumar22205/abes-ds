@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+
+<body>
+ <style>
+    #container{
+        display: flex;
+        
+    }
+    #card{
+        border: 2px solid black;
+        padding: 20px;
+        width: 300px;
+        height: auto;
+        margin: auto;
+        background-color: lightgray;
+        color: green;
+
+    }
+    #card2{
+        border: 2px solid black;
+        padding: 20px;
+        width: 300px;
+        height: auto;
+        margin: auto;
+        background-color: lightgray;
+        color: green;
+    }
+ </style>
+ <div id="container">
+    <div id="card">
+        <h1 style="color: darkblue;">Student Details</h1>
+        <h4> Branch: cse</h4>
+        <p id="adi1"> </p>
+        <p id="adi2"> </p>
+        <p id="adi3"> </p>        
+    </div>
+    
+    <div id="card2">
+        <h1 style="color: darkblue;">Student Details</h1>
+        <h4> Branch: DS</h4>
+        <p id="adi4"> </p>
+        <p id="adi5"> </p>    
+    </div>
+</div>
+
+
+    <script>
+        class team{
+            constructor(Name,Class,Branch,Rollno){
+                this.Name = Name;
+                this.Class = Class;
+                this.Branch = Branch;
+                this.Rollno = Rollno;
+            }
+        }
+        const student1= new team("prince","Btech","CSE",123)
+        const student2= new team("prakhar","Btech","CSE",124)
+        const student3= new team("nitin","Btech","CSE",125)
+        const student4= new team("pranav","Btech","DS",126)
+        const student5= new team("kushagra","Btech","DS",127)
+
+    
+        
+        document.getElementById("adi1").innerHTML=student1.Name+"<br>"+student1.Class+"<br>"+student1.Branch+"<br>"+student1.Rollno+"<br>"
+        document.getElementById("adi2").innerHTML=student1.Name+"<br>"+student1.Class+"<br>"+student1.Branch+"<br>"+student1.Rollno+"<br>"
+        document.getElementById("adi3").innerHTML=student1.Name+"<br>"+student1.Class+"<br>"+student1.Branch+"<br>"+student1.Rollno+"<br>"
+        document.getElementById("adi4").innerHTML=student1.Name+"<br>"+student1.Class+"<br>"+student1.Branch+"<br>"+student1.Rollno+"<br>"
+        document.getElementById("adi5").innerHTML=student1.Name+"<br>"+student1.Class+"<br>"+student1.Branch+"<br>"+student1.Rollno+"<br>"
+</script>
+</body>
+</html>
