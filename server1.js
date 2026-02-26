@@ -19,7 +19,7 @@ const readFileAsync = promisify(require('fs').readFile);
 
 async function  readWithPromisify(){
     try {
-        const data = await readFileAsync('myfile.txt','utf8');
+        const data = await readFileAsync('myFile.txt','utf8');
         console.log(data);
 
     } catch (error) {
